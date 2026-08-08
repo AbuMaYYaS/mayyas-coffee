@@ -4,6 +4,7 @@
   body {
     font-family: 'Tajawal', 'Cairo', sans-serif;
     background-color: #FBF9F5;
+    overflow-x: hidden;
   }
 }
 
@@ -21,4 +22,45 @@
 
 .bg-teal-brand {
   background-color: #0D9488;
+}
+
+/* Custom Creative Keyframes & Effects */
+@keyframes float-slow {
+  0% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(2deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+
+.animate-float {
+  animation: float-slow 4s ease-in-out infinite;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #C49A6C, #F5EFE6, #0D9488);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.glass-dark {
+  background: rgba(17, 17, 17, 0.75);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.steam-particle {
+  position: absolute;
+  bottom: 20%;
+  width: 8px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  filter: blur(2px);
+  opacity: 0;
 }
