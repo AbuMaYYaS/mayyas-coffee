@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Tajawal', 'Cairo', sans-serif;
+    background-color: #FBF9F5;
+  }
+}
+
+.bg-warm-gray {
+  background-color: #FBF9F5;
+}
+
+.bg-light-havan {
+  background-color: #F5EFE6;
+}
+
+.bg-havan {
+  background-color: #D4B38B;
+}
+
+.bg-teal-brand {
+  background-color: #0D9488;
+}
